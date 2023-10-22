@@ -99,43 +99,30 @@ Become a financial contributor and help us sustain our community. [[Contribute](
 ### Organizations
 
 Support this project with your organization. Your logo will show up here with a link to your website. [[Contribute](https://opencollective.com/readme-md-generator/contribute)]
-<a href="https://opencollective.com/readme-md-generator/organization/0/website"><img src="https://opencollective.com/readme-md-generator/organization/0/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/1/website"><img src="https://opencollective.com/readme-md-generator/organization/1/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/2/website"><img src="https://opencollective.com/readme-md-generator/organization/2/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/3/website"><img src="https://opencollective.com/readme-md-generator/organization/3/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/4/website"><img src="https://opencollective.com/readme-md-generator/organization/4/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/5/website"><img src="https://opencollective.com/readme-md-generator/organization/5/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/6/website"><img src="https://opencollective.com/readme-md-generator/organization/6/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/7/website"><img src="https://opencollective.com/readme-md-generator/organization/7/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/8/website"><img src="https://opencollective.com/readme-md-generator/organization/8/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/9/website"><img src="https://opencollective.com/readme-md-generator/organization/9/avatar.svg"></a>
+<a href="https://ahmed-osama-salem.github.io/ahmed-profile.js/"><img src="https://avatars.githubusercontent.com/u/97908950?v=4"></a>
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome.<br />
-Feel free to check [issues page](https://github.com/kefranabg/readme-md-generator/issues) if you want to contribute.<br />
+Feel free to check [issues page](https://github.com/Ahmed-Osama-Salem/swiper-react-component/issues) if you want to contribute.<br />
 [Check the contributing guide](./CONTRIBUTING.md).<br />
 
 ## Author
 
-👤 **Franck Abgrall**
+👤 **Ahmed Osama**
 
-- Twitter: [@FranckAbgrall](https://twitter.com/FranckAbgrall)
-- Github: [@kefranabg](https://github.com/kefranabg)
+- Linkedin: [@AhmedOsama](https://www.linkedin.com/in/ahmed-osama-083602243/)
+- Github: [Ahmed Osama](https://github.com/Ahmed-Osama-Salem)
 
 ## Show your support
 
-Please ⭐️ this repository if this project helped you!
+Please ⭐️ this repository if this package helped you!
 
-<a href="https://www.patreon.com/FranckAbgrall">
+<a href="https://github.com/Ahmed-Osama-Salem/swiper-react-component">
   <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
 </a>
 
 ## 📝 License
 
-Copyright © 2019 [Franck Abgrall](https://github.com/kefranabg).<br />
+Copyright © 2023 [Ahmed Osama](https://github.com/Ahmed-Osama-Salem).<br />
 This project is [MIT](https://github.com/kefranabg/readme-md-generator/blob/master/LICENSE) licensed.
-
----
-
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
