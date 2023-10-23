@@ -20,7 +20,7 @@
 
 > `Swiper React Component` Elevate Your Slider Game with Seamless Reusability and Optimal Performance!.<br /> just install and start your Slider Game ,its swiper but smarter ✨
 
-## ✨ Demo
+<!-- ## ✨ Demo
 
 `readme-md-generator` is able to read your environment (package.json, git config...) to suggest you default answers during the `README.md` creation process:
 
@@ -94,7 +94,9 @@ Become a financial contributor and help us sustain our community. [[Contribute](
 
 ### Individuals
 
-<a href="https://opencollective.com/readme-md-generator"><img src="https://opencollective.com/readme-md-generator/individuals.svg?width=890"></a>
+<a href="https://opencollective.com/readme-md-generator"><img src="https://opencollective.com/readme-md-generator/individuals.svg?width=890"></a> -->
+
+### Docs under construction ... :exclamation: :exclamation:
 
 ### Organizations
 
