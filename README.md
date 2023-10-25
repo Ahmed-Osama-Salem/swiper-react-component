@@ -20,6 +20,14 @@
 
 > `Swiper React Component` Elevate Your Slider Game with Seamless Reusability and Optimal Performance!.<br /> just install and start your Slider Game ,its swiper but smarter ✨
 
+## ✨ Demo
+
+`Swiper-React-Component` is a resuable and smarter component based on swiper library and based on cloning elements with different shapes this component always focused on handling external data with swiper slides that can easily handled by a developer and when working with team you just need one component to handle your needs `static data , api , styles, etc` without creating many different components and too much imports in your project that make it too hard to fix , so now dont be sad this component is your ideal soluation with your slider game .
+
+<p align="center">
+  <img width="700" align="center" src="https://github.com/Ahmed-Osama-Salem/swiper-react-component-demo/blob/main/public/demo.gif" alt="demo"/>
+</p>
+
 <!-- ## ✨ Demo
 
 `readme-md-generator` is able to read your environment (package.json, git config...) to suggest you default answers during the `README.md` creation process:
@@ -97,6 +105,10 @@ Become a financial contributor and help us sustain our community. [[Contribute](
 <a href="https://opencollective.com/readme-md-generator"><img src="https://opencollective.com/readme-md-generator/individuals.svg?width=890"></a> -->
 
 ### Docs under construction ... :exclamation: :exclamation:
+
+<!-- ### Description
+
+`Swiper-React-Component` is a resuable and smarter component based on swiper library and based on cloning elements with different shapes this component always focused on handling external data with swiper slides that can easily handled by a developer and when working with team you just need one component to handle your needs `static data , api , styles, etc` without creating many different components and too much imports in your project that make it too hard to fix , so now dont be sad this component is your ideal soluation with your slider game . -->
 
 ### Organizations
 
