@@ -1,5 +1,5 @@
 {
-  "version": "1.2.5",
+  "version": "0.0.0-development",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -19,7 +19,8 @@
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "semantic-release": "semantic-release --branches main"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -75,10 +76,15 @@
     "style-loader": "^3.3.3",
     "tsdx": "^0.14.1",
     "tslib": "^2.6.2",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "semantic-release": "^22.0.5"
   },
   "dependencies": {
     "postcss": "^8.4.31",
     "swiper": "^10.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ahmed-Osama-Salem/swiper-react-component.git"
   }
 }
