@@ -80,7 +80,6 @@
     "semantic-release": "^22.0.5"
   },
   "dependencies": {
-    "postcss": "^8.4.31",
     "swiper": "^10.3.1"
   },
   "repository": {
