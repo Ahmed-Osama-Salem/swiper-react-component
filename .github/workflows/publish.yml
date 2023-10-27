@@ -9,7 +9,6 @@ on:
 jobs:
   quality:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js 18
@@ -29,6 +28,9 @@ jobs:
         with:
           node-version: 18
       - run: npm ci
+      - run: npm adduser
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
