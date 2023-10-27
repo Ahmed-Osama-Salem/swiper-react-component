@@ -1,4 +1,8 @@
-<h1 align="center">Swiper-react-component</h1>
+<div style="text-align: center;">
+
+# Swiper-react-component
+
+</div>
 <p align="center">
   <img src="https://img.shields.io/npm/v/readme-md-generator.svg?orange=blue" />
   <a href="https://www.npmjs.com/package/@ahmed-osama-salem/swiper-react-component">
@@ -22,107 +26,199 @@
 
 ## ✨ Demo
 
-`Swiper-React-Component` is a resuable and smarter component based on swiper library and based on cloning elements with different shapes this component always focused on handling external data with swiper slides that can easily handled by a developer and when working with team you just need one component to handle your needs `static data , api , styles, etc` without creating many different components and too much imports in your project that make it too hard to fix , so now dont be sad this component is your ideal soluation with your slider game .
+`Swiper-React-Component` is a resuable and smarter component based on swiper library and based on cloning elements with different shapes this component always focused on handling external data with swiper slides that can easily handled by a developer and when working with team you just need one component to handle your needs `static data , api , styles, etc` without creating many different components and too much imports in your project that make it too hard to read and fix , so now don't be sad this component is your ideal soluation with your slider game .
 
 <p align="center">
   <img width="700" align="center" src="https://github.com/Ahmed-Osama-Salem/swiper-react-component-demo/blob/main/public/demo.gif" alt="demo"/>
 </p>
 
-<!-- ## ✨ Demo
+## Table of Contents
 
-`readme-md-generator` is able to read your environment (package.json, git config...) to suggest you default answers during the `README.md` creation process:
+- [Getting Started](#getting-started)
+- [Example](#example)
+- [Usage](#usage)
+- [Props](#props)
+- [Browser Compatibility](#browser-compatibility)
+- [Troubleshooting](#troubleshooting)
+- [Contributing](#contributing)
 
-<p align="center">
-  <img width="700" align="center" src="https://user-images.githubusercontent.com/9840435/60266022-72a82400-98e7-11e9-9958-f9004c2f97e1.gif" alt="demo"/>
-</p>
+## Getting started
 
-Generated `README.md`:
+Install `swiper-react-component` using npm.
 
-<p align="center">
-  <img width="700" src="https://user-images.githubusercontent.com/9840435/60266090-9cf9e180-98e7-11e9-9cac-3afeec349bbc.jpg" alt="cli output"/>
-</p>
+```sh
+# NPM
+npm i @ahmed-osama-salem/swiper-react-component
 
-Example of `package.json` with good meta data:
-
-```json
-// The package.json is not required to run README-MD-GENERATOR
-{
-  "name": "readme-md-generator",
-  "version": "0.1.3",
-  "description": "CLI that generates beautiful README.md files.",
-  "author": "Franck Abgrall",
-  "license": "MIT",
-  "homepage": "https://github.com/kefranabg/readme-md-generator#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kefranabg/readme-md-generator.git"
-  },
-  "bugs": {
-    "url": "https://github.com/kefranabg/readme-md-generator/issues"
-  },
-  "engines": {
-    "npm": ">=5.5.0",
-    "node": ">=9.3.0"
-  }
-}
+# YARN
+yarn add @ahmed-osama-salem/swiper-react-component
 ```
+
+## Example
+
+See the docs, tutorials and examples on the Github:
+
+You can find [swiper-react-component examples here](https://github.com/Ahmed-Osama-Salem/swiper-react-component-demo).
 
 ## 🚀 Usage
 
-Make sure you have [npx](https://www.npmjs.com/package/npx) installed (`npx` is shipped by default since npm `5.2.0`)
+> your first swiper component
 
-Just run the following command at the root of your project and answer questions:
+```jsx
+import { SwiperCarousel } from '@ahmed-osama-salem/swiper-react-component';
 
-```sh
-npx readme-md-generator
+interface ShapeOneProps {
+  item?: { id: number };
+}
+
+// THIS IS YOUR SWIPERSLIDE COMPONENT THAT AUTOMATICALLY READ EVERY OBJECT OF YOUR DATA AS item prop
+// YOU CAN CUSTOMIZE YOUR OWN
+
+const ShapeOne = (props: ShapeOneProps) => {
+  return (
+    <div className="flex h-[250px] w-[100%] items-center justify-center bg-stone-300 rounded-lg ">
+      {props.item?.id}
+    </div>
+  );
+};
+
+const SwiperPagination = () => {
+  // Your custom data you can add any data like you want , but must have an id key
+  const data = [
+    { id: 1 },
+    { id: 2 },
+    { id: 3 },
+    { id: 4 },
+    { id: 5 },
+    { id: 6 },
+    { id: 7 },
+  ];
+
+  return (
+    <div className="w-full">
+      <SwiperCarousel
+        item={data}
+        slidesPerView={1}
+        pagination
+        navigation
+        spaceBetween={2}
+        direction="horizontal"
+        swiperContainerClass="w-[80%]"
+      >
+        <ShapeOne />
+      </SwiperCarousel>
+    </div>
+  );
+};
+
+export default SwiperPagination;
 ```
 
-Or use default values for all questions (`-y`):
+> swiper component can easy handle api data by passing your api data state
 
-```sh
-npx readme-md-generator -y
+```jsx
+import { SwiperCarousel } from '@ahmed-osama-salem/swiper-react-component';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
+
+const ShapeOne = ({
+  item,
+}: {
+  item?: { id: number, urls: { raw: string } },
+}) => {
+  return (
+    <div className="flex h-[250px] w-[250px] items-center justify-center bg-stone-300 rounded-full">
+      <img
+        alt="image"
+        src={item?.urls.raw}
+        className=" rounded-full object-cover w-full h-full"
+      />
+    </div>
+  );
+};
+
+const SwiperWithApi = () => {
+  const [data, setData] = useState([]);
+
+  const getRandomData = async () => {
+    const res = await axios
+      .get(
+        'https://api.unsplash.com/photos/?client_id=9dfwtUcXdaD9C3I6HXgAq-3R4Ceyry8mv9ryFvd54dA'
+      )
+      .then(data => {
+        setData(data.data);
+      })
+      .catch(err => {
+        return err;
+      });
+
+    return res;
+  };
+
+  useEffect(() => {
+    getRandomData();
+  }, []);
+
+  return (
+    <SwiperCarousel
+      item={data}
+      navigation
+      slidesPerView={5}
+      spaceBetween={2}
+      direction="horizontal"
+    >
+      <ShapeOne />
+    </SwiperCarousel>
+  );
+};
+
+export default SwiperWithApi;
 ```
 
-Use your own `ejs` README template (`-p`):
+> `swiperProps` can provide any props from swiper lib from one prop
 
-```sh
-npx readme-md-generator -p path/to/my/own/template.md
+```jsx
+<SwiperCarousel
+  item={data}
+  slidesPerView={1}
+  pagination
+  spaceBetween={2}
+  direction="horizontal"
+  swiperContainerClass="w-[80%]"
+  swiperProps={{ pagination: { type: 'progressbar' } }} // HERE
+>
+  <ShapeOne />
+</SwiperCarousel>
 ```
 
-You can find [ejs README template examples here](https://github.com/kefranabg/readme-md-generator/tree/master/templates).
+## Props
 
-## Code Contributors
+| Prop                          |           Type            | <div style="width: 400px;">Description</div>                                                                                         |
+| :---------------------------- | :-----------------------: | :----------------------------------------------------------------------------------------------------------------------------------- |
+| item<br/>_(required)_         |         object[]          | slides data with the following keys: <div>`id` is the primary **Example**: `[{id: 1, anything: 'sub'}, { id: 2, anything: "sub 2"}]` |
+| children<br/>_(required)_     | ReactElement<{ item: T }> | your component that will render every object in your data in a single slide of swiper that accept any shape of data.                 |
+| direction<br/>_(recommended)_ |          string           | by default is horizontal <div>`"horizontal" or "vertical"`</div>                                                                     |
+| slidesPerView                 |          number           | number of how may slide show per view of swiper<br/> by default is `4`                                                               |
+| spaceBetween                  |          number           | number of gaps between slides<br/> by default is `30`                                                                                |
+| pagination                    |          boolean          | `true` if you want to add pagination                                                                                                 |
+| navigation                    |          boolean          | `true` if you want to add navigation                                                                                                 |
+| swiperContainerClass          |          string           | class of main swiper container accept any css class ,tailwind or bootstrap classes                                                   |
+| swiperSlideClass              |          string           | class of swiper slides accept any css class ,tailwind or bootstrap classes.                                                          |
+| swiperProps                   |       SwiperOptions       | this prop catches any option or props in swiper lib and give you many option to handle your swiper .                                 |
 
-This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
-<a href="https://github.com/kefranabg/readme-md-generator/graphs/contributors"><img src="https://opencollective.com/readme-md-generator/contributors.svg?width=890&button=false" /></a>
+<!--## Code Contributors-->
 
-## Financial Contributors
+<!--This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].-->
+<!--<a href="https://github.com/kefranabg/readme-md-generator/graphs/contributors"><img src="https://opencollective.com/readme-md-generator/contributors.svg?width=890&button=false" /></a>-->
 
-Become a financial contributor and help us sustain our community. [[Contribute](https://opencollective.com/readme-md-generator/contribute)]
+## Browser Compatibility
 
-### Individuals
-
-<a href="https://opencollective.com/readme-md-generator"><img src="https://opencollective.com/readme-md-generator/individuals.svg?width=890"></a> -->
-
-### Docs under construction ... :exclamation: :exclamation:
-
-<!-- ### Description
-
-`Swiper-React-Component` is a resuable and smarter component based on swiper library and based on cloning elements with different shapes this component always focused on handling external data with swiper slides that can easily handled by a developer and when working with team you just need one component to handle your needs `static data , api , styles, etc` without creating many different components and too much imports in your project that make it too hard to fix , so now dont be sad this component is your ideal soluation with your slider game . -->
-
-### Organizations
-
-Support this project with your organization. Your logo will show up here with a link to your website. [[Contribute](https://opencollective.com/readme-md-generator/contribute)]
-<a href="https://opencollective.com/readme-md-generator/organization/0/website"><img src="https://opencollective.com/readme-md-generator/organization/0/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/1/website"><img src="https://opencollective.com/readme-md-generator/organization/1/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/2/website"><img src="https://opencollective.com/readme-md-generator/organization/2/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/3/website"><img src="https://opencollective.com/readme-md-generator/organization/3/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/4/website"><img src="https://opencollective.com/readme-md-generator/organization/4/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/5/website"><img src="https://opencollective.com/readme-md-generator/organization/5/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/6/website"><img src="https://opencollective.com/readme-md-generator/organization/6/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/7/website"><img src="https://opencollective.com/readme-md-generator/organization/7/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/8/website"><img src="https://opencollective.com/readme-md-generator/organization/8/avatar.svg"></a>
-<a href="https://opencollective.com/readme-md-generator/organization/9/website"><img src="https://opencollective.com/readme-md-generator/organization/9/avatar.svg"></a>
+| Browser | Works? |
+| :------ | :----- |
+| Chrome  | Yes    |
+| Firefox | Yes    |
+| Safari  | Yes    |
+| IE 11   | Yes    |
 
 ## 🤝 Contributing
 
