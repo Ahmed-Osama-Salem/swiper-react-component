@@ -1,8 +1,7 @@
-import 'react-app-polyfill/ie11';
+// import 'react-app-polyfill/ie11';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { SwiperCarousel } from '../.';
-
+import { SwiperCarousel } from '../src/components/SwiperCarousel';
 export const data = [
   {
     id: 1,
