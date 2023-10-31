@@ -9,11 +9,7 @@ module.exports = {
       async writeBundle() {
         const fs = require('fs');
         const path = require('path');
-        const sourcePath = path.resolve(
-          __dirname,
-          'src',
-          'components/style.css'
-        );
+        const sourcePath = path.resolve(__dirname, 'src', 'style.css');
         const outputDir = path.resolve(__dirname, 'dist');
         const outputPath = path.join(outputDir, 'style.css');
 
