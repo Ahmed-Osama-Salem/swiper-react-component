@@ -1,25 +1,13 @@
 # Swiper-react-component
 
-<p align="center">
-  <img src="https://img.shields.io/npm/v/readme-md-generator.svg?orange=blue" />
-  <a href="https://www.npmjs.com/package/@ahmed-osama-salem/swiper-react-component">
-    <img alt="downloads" src="https://img.shields.io/npm/dm/readme-md-generator.svg?color=blue" target="_blank" />
-  </a>
-  <a href="https://github.com/Ahmed-Osama-Salem/swiper-react-component/blob/main/LICENSE">
-    <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-yellow.svg" target="_blank" />
-  </a>
-  <a href="https://codecov.io/gh/kefranabg/readme-md-generator">
-    <img src="https://codecov.io/gh/kefranabg/readme-md-generator/branch/master/graph/badge.svg" />
-  </a>
-  <a href="https://github.com/Ahmed-Osama-Salem/swiper-react-component">
-    <img src="https://img.shields.io/badge/changelog-gitmoji-brightgreen.svg" alt="gitmoji-changelog">
-  </a>
-  <a href="https://github.com/Ahmed-Osama-Salem">
-    <img alt="Github: AhmedOsama" src="https://img.shields.io/twitter/follow/ahmedosama.svg?style=social" target="_blank" />
-  </a> 
-</p>
+![NPM version](https://img.shields.io/npm/v/@ahmed-osama-salem/swiper-react-component?style=flat)
+![NPM license](https://img.shields.io/npm/l/@ahmed-osama-salem/swiper-react-component?style=flat)
+[![NPM total downloads](https://img.shields.io/npm/dt/@ahmed-osama-salem/swiper-react-component?style=flat)](https://npmcharts.com/compare/react-sortable-tree?minimal=true)
+[![NPM monthly downloads](https://img.shields.io/npm/dm/@ahmed-osama-salem/swiper-react-component?style=flat)](https://npmcharts.com/compare/react-sortable-tree?minimal=true)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![Github](https://img.shields.io/twitter/follow/ahmedosama.svg?style=social)](https://github.com/Ahmed-Osama-Salem)
 
-> `Swiper React Component` Elevate Your Slider Game with Seamless Reusability and Optimal Performance!.<br /> just install and start your Slider Game ,its swiper but smarter ✨
+> Swiper React Component Elevate Your Slider Game with Seamless Reusability and Optimal Performance!.<br /> just install and start your Slider Game ,its swiper but smarter ✨
 
 ## ✨ Demo
 
