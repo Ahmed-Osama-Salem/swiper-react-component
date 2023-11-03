@@ -1,14 +1,3 @@
-/* eslint-disable import/no-duplicates */
-// Import Swiper styles
-// import 'swiper/css';
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
-
-// import 'swiper/swiper-bundle.css';
-// import 'swiper/components/navigation/navigation.min.css';
-// import 'swiper/components/pagination/pagination.min.css';
-
-// import '@/styles/global.css';
 import type { ReactElement } from 'react';
 import React, { useEffect } from 'react';
 import SwiperCore from 'swiper';
