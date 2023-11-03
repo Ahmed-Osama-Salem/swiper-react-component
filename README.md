@@ -1,8 +1,5 @@
-<div style="text-align: center;">
-
 # Swiper-react-component
 
-</div>
 <p align="center">
   <img src="https://img.shields.io/npm/v/readme-md-generator.svg?orange=blue" />
   <a href="https://www.npmjs.com/package/@ahmed-osama-salem/swiper-react-component">
